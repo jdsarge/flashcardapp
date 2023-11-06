@@ -36,7 +36,6 @@ function AddCard({ deck, setDeck }) {
     try {
       await createCard(deckId, card);
       setCard({ front: "", back: "", deckId: deckId });
-      history.push(`/decks/${deck.id}`);
     } catch (err) {
       console.error("Error creating card:", err);
       setError("Failed to create card. Please try again.");
