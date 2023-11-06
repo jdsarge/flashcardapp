@@ -45,9 +45,9 @@ function Card({ deck }) {
               Flip
             </button>
             {cardSide === 'back' && (
-              <button className="btn btn-primary" onClick={handleNext} disabled={index === deck?.cards?.length - 1}>
-                Next
-              </button>
+              <button className="btn btn-primary" onClick={handleNext}>
+              Next
+           </button>
             )}
           </div>
         </div>
